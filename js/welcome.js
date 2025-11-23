@@ -49,7 +49,7 @@ function escribirLetra(cursor) {
     setTimeout(() => escribirLetra(cursor), delay);
   } else {
     setTimeout(() => {
-      window.location.href = "main.html"; // Cambia esto por la URL a la que quieras ir
-    }, 500); // Le das un pequeño delay opcional antes de redirigir
+      window.location.href = "main.html"; 
+    }, 2000); 
   }
 }

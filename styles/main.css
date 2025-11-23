@@ -21,23 +21,47 @@ body {
   z-index: 1;
 }
 
-.content {
+#content {
   position: relative;
   z-index: 2;
+ justify-content: center;
+  align-items: center;
   text-align: center;
-  border: solid;
-  border-width: 5px;
+  border-radius: 15px;       /* bordes redondeados */
+  padding: 30px;
   border-color: rgb(35, 88, 78);
-
   grid-template-areas:
     "titulo titulo"
     "parrafo boton"; /* puedes personalizar según tus elementos */
   gap: 20px; /* espacio entre celdas */
   grid-template-columns: 1fr 1fr; /* dos columnas iguales */
   grid-template-rows: auto auto; /* dos filas, altura automática */
-
-  text-align: center;
   border: solid 5px rgb(38, 129, 111);
   height: 70vh;
   width: 70vw;
+  box-sizing: border-box; 
+}
+
+span{
+  color: rgb(38, 129, 111);
+}
+
+#textillo {
+  display: block;
+  font-size: 1.2rem;          /* tamaño de letra más legible */
+  line-height: 1.8rem;        /* altura de línea para leer cómodo */
+  color: rgb(38, 129, 111);
+  text-align: justify;         /* justificado para que se vea limpio */
+  text-shadow: 1px 1px 2px black; /* sombra ligera para destacar sobre fondo */
+  word-wrap: break-word;      /* evita que palabras largas se salgan */
+}
+
+.personaje {
+  font-weight: bold;
+  color: rgb(95, 178, 199);
+}
+
+.narracion {
+  font-style: italic;
+  color: rgb(38, 129, 111);
 }
