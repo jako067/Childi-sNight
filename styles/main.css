@@ -1,0 +1,57 @@
+/* styles/main.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(9, 9, 55);
+  color: white;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.center-wrap {
+  /* centramos en pantalla */
+  min-height: 100vh;              /* asegura al menos la altura de la ventana */
+  display: flex;
+  flex-direction: column;         /* apila verticalmente */
+  justify-content: center;        /* centra verticalmente */
+  align-items: center;            /* centra horizontalmente */
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;             /* centra texto dentro de los elementos */
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;                   /* separa campos de forma limpia */
+  width: 320px;                   /* ancho fijo razonable para el form */
+  max-width: 90vw;
+  margin-top: 1rem;
+}
+
+.login-form label {
+  text-align: left;               /* etiquetas alineadas a la izquierda dentro del form */
+  font-size: 0.9rem;
+}
+
+.login-form input {
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.06);
+}
+
+.btn {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: #fff;
+  font-weight: 600;
+}

@@ -1,0 +1,49 @@
+body{
+    margin: 0%;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+#presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 7, 52);
+    height: 100vh;
+}
+h1{
+    margin: 0%;
+    color: rgb(68, 62, 126);
+    font-size: 5em;
+}
+
+h2{
+    margin: 0%;
+    color: rgb(68, 62, 126);
+    font-size: 3em;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(7, 7, 52);
+    height: 100vh;
+    text-align: center; /* centrar texto dentro de su contenedor */
+    padding: 0 20px; /* evitar que el texto toque los bordes en pantallas pequeñas */
+}
+
+.cursor {
+    display: inline-block;
+    width: 1ch;
+    height: 1em;         /* altura igual a la línea del texto */
+
+    background-color: rgb(135, 136, 230);
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+}
