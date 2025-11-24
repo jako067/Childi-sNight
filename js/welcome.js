@@ -13,7 +13,7 @@ setTimeout(() => {
   lienzo.appendChild(cursor);
 
   escribirLetra(cursor);
-}, 3000);
+}, 300);
 
 let indice = 0;
 let texto =
@@ -37,19 +37,19 @@ function escribirLetra(cursor) {
     }, 10);
     indice++;
 
-    let delay = 50;
+    let delay = 10;
     if (
       texto[indice - 1] === "." ||
       texto[indice - 1] === "," ||
       texto[indice - 1] === ";"
     ) {
-      delay = 300;
+      delay = 30;
     }
 
     setTimeout(() => escribirLetra(cursor), delay);
   } else {
     setTimeout(() => {
-      window.location.href = "main.html"; 
+      window.location.href = "scene1.html"; 
     }, 2000); 
   }
 }
